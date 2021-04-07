@@ -653,7 +653,7 @@ MonoBehaviour:
   shootingPoint: {fileID: 7235189793908527731}
   fireRange: 9
   fireRate: 1
-  rotationSpeed: 180
+  rotationSpeed: 280
 --- !u!114 &-46652922439199694
 MonoBehaviour:
   m_ObjectHideFlags: 0

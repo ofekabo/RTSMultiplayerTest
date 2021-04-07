@@ -389,6 +389,7 @@
             <e p="Building.cs" t="Include" />
             <e p="BuildingButton.cs" t="Include" />
             <e p="GameOverHandler.cs" t="Include" />
+            <e p="ResourceGenerator.cs" t="Include" />
             <e p="UnitBase.cs" t="Include" />
             <e p="UnitSpawner.cs" t="Include" />
           </e>
@@ -409,6 +410,9 @@
             <e p="RTSNetworkManager.cs" t="Include" />
             <e p="RTSPlayer.cs" t="Include" />
             <e p="ServerAnimationHandler.cs" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="ResourcesDisplay.cs" t="Include" />
           </e>
           <e p="Units" t="Include">
             <e p="Unit.cs" t="Include" />

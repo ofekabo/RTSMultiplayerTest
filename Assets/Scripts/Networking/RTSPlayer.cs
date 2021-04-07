@@ -2,15 +2,29 @@
 using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
+using System;
 
 public class RTSPlayer : NetworkBehaviour
 {
-  [SerializeField] private List<Unit> myUnits = new List<Unit>();
+  [SerializeField] private Building[] buildings = new Building[0];
+  
+  [SyncVar(hook = nameof(ClientHandleResourcesUpdated))]
+  private int resources = 500;
+  
+  public event Action<int> ClientOnResourcesUpdated;
+  
+  private List<Unit> myUnits = new List<Unit>();
   private List<Building> myBuildings = new List<Building>();
 
   public List<Unit> MyUnits { get => myUnits; }
   public List<Building> MyBuildings { get => myBuildings; }
-  
+  public int Resources { get => resources; }
+
+  [Server]
+  public void SetResources(int newResources)
+  {
+    resources = newResources;
+  }
   
   #region Server
 
@@ -24,6 +38,30 @@ public class RTSPlayer : NetworkBehaviour
     Building.ServerOnBuildingDespawned += ServerHandleBuildingDespawned;
 
   }
+
+  [Command]
+  public void CmdTryPlaceBuilding(int buildingID,Vector3 point)
+  {
+    Building buildingToPlace = null;
+
+    foreach (var building in buildings)
+    {
+      if (building.ID == buildingID)
+      {
+        buildingToPlace = building;
+        break;
+      }
+    }
+    
+    if(buildingToPlace == null) { return; }
+    
+    GameObject buildingInstance =
+      Instantiate(buildingToPlace.gameObject,point,buildingToPlace.transform.rotation);
+    
+    NetworkServer.Spawn(buildingInstance,connectionToClient);
+    
+  }
+  
 
   public override void OnStopServer()
   {
@@ -84,6 +122,11 @@ public class RTSPlayer : NetworkBehaviour
     
     Building.AuthorityOnBuildingSpawned -= AuthorityHandleBuildingSpawned;
     Building.AuthorityOnBuildingDespawned -= AuthorityHandleBuildingDespawned;
+  }
+
+  private void ClientHandleResourcesUpdated(int oldResources, int newResources)
+  {
+    ClientOnResourcesUpdated?.Invoke(newResources);
   }
 
   private void AuthorityHandleUnitSpawned(Unit unit)
