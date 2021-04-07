@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="63709e8c-1419-402e-8209-690d21a41d9a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NetworkManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NetworkManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitBase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitBase.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UnitBase.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UnitBase.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene_Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene_Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Networking/RTSPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Networking/RTSPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buildings/BuildingButton.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Networking/RTSPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Buildings/Building.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Buildings/BuildingButton.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qpP6txcWPFzVJ3pRRLyVdTB9O4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../rts builds/RTS Multipllayer.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\ofeka\Desktop\TempProjects\Udemy\Unity Projects\rts builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63709e8c-1419-402e-8209-690d21a41d9a" name="Default Changelist" comment="" />
+      <created>1617773389147</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617773389147</updated>
+      <workItem from="1617773391651" duration="2808000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1084" y="402" key="RiderGenerateDialog" timestamp="1617778011571">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1084" y="402" key="RiderGenerateDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1617778011571" />
+  </component>
+</project>
