@@ -8,15 +8,18 @@ using UnityEngine.AI;
 public class UnitFiring : NetworkBehaviour
 {
     [SerializeField] UnitMovement unitMovement;
+    [SerializeField] NetworkAnimator _networkAnimator;
     [SerializeField] private Targeter targeter;
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private  Transform shootingPoint;
     [SerializeField] private float fireRange = 7f;
     [SerializeField] private float fireRate = 0.5f;
     [SerializeField] private  float rotationSpeed = 20f;
-
+    
     private Targetable target;
     private float _lastFireTime;
+    private bool shoot = false;
+
 
 
     [ServerCallback]
@@ -36,16 +39,24 @@ public class UnitFiring : NetworkBehaviour
 
         transform.rotation = Quaternion.RotateTowards
             (transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
+        
+        
+        
         if (_lastFireTime > fireRate)
         {
+            unitMovement.anim.SetTrigger("Shoot");
+            _networkAnimator.SetTrigger("Shoot");
+            
             Quaternion bulletRotation = Quaternion.LookRotation
                 (target.AimAtPoint.position - shootingPoint.position);
+            
+            if(!shoot) { return; }
             
             GameObject bulletInstance = Instantiate(projectilePrefab, shootingPoint.position, bulletRotation);
             
             NetworkServer.Spawn(bulletInstance, connectionToClient);
             
+            shoot = false;
             _lastFireTime = 0;
         }
         
@@ -60,7 +71,11 @@ public class UnitFiring : NetworkBehaviour
                <= fireRange * fireRange;
         
     }
-    
+
+    void Shoot()
+    {
+        shoot = true;
+    }
     
     
 }

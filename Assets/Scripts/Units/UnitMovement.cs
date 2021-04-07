@@ -13,6 +13,8 @@ public class UnitMovement : NetworkBehaviour
    [Header("Checks")]
    [SerializeField] float chaseRange = 10f;
 
+   
+   
    #region Server
 
    public override void OnStartServer()
@@ -28,6 +30,7 @@ public class UnitMovement : NetworkBehaviour
    [ServerCallback]
    private void Update()
    {
+      
       Targetable target = targeter.Target;
       if (target != null)
       {

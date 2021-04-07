@@ -406,6 +406,7 @@
           <e p="Menus" t="Include">
             <e p="GameOverDisplay.cs" t="Include" />
           </e>
+          <e p="MenuVisual.cs" t="Include" />
           <e p="Networking" t="Include">
             <e p="RTSNetworkManager.cs" t="Include" />
             <e p="RTSPlayer.cs" t="Include" />
@@ -454,7 +455,6 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="UnitAnimationHandler.cs" t="Include" />
       </e>
       <e p="kcp2k.csproj" t="IncludeRecursive" />
       <e p="Mirror.Authenticators.csproj" t="IncludeRecursive" />

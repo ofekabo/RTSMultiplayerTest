@@ -538,7 +538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.01
-  clientAuthority: 1
+  clientAuthority: 0
   animator: {fileID: 472169478056753570}
 --- !u!114 &4767586964696717796
 MonoBehaviour:
@@ -651,6 +651,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   unitMovement: {fileID: 4767586964696717796}
+  _networkAnimator: {fileID: 4113291168304196978}
   targeter: {fileID: 300360038382688871}
   projectilePrefab: {fileID: 3169691389506381475, guid: 8fe7083752dbb3a4899dd6001fd4e5f0, type: 3}
   shootingPoint: {fileID: 7235189793908527731}
