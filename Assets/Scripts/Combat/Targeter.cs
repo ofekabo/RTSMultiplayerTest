@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Targeter : NetworkBehaviour
 {
     private Targetable _target;
+    
     public Targetable Target { get => _target;}
+    
     #region Server
 
     public override void OnStartServer()

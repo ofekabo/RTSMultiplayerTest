@@ -7,8 +7,8 @@ using UnityEngine.AI;
 
 public class UnitMovement : NetworkBehaviour
 {
-   [SerializeField] private NavMeshAgent agent = null;
-   [SerializeField] private Animator anim;
+   public NavMeshAgent agent = null;
+   public Animator anim;
    [SerializeField] private Targeter targeter = null;
    [Header("Checks")]
    [SerializeField] float chaseRange = 10f;
@@ -52,6 +52,12 @@ public class UnitMovement : NetworkBehaviour
    [Command]
    public void CmdMove(Vector3 position)
    {
+      ServerMove(position);
+   }
+
+   [Server]
+   public void ServerMove(Vector3 position)
+   {
       targeter.ClearTarget();
       
       if (!NavMesh.SamplePosition(position, out NavMeshHit hit, 1f, NavMesh.AllAreas)) { return; }
@@ -69,13 +75,14 @@ public class UnitMovement : NetworkBehaviour
 
    #region Client
 
-   public void CmdUpdateAnimator()
+   public void UpdateAnimator()
    {
       Vector3 velocity = agent.velocity;
       Vector3 localVelocity = transform.InverseTransformDirection(velocity);
       float speed = localVelocity.z;
       anim.SetFloat("ForwardSpeed", speed);
    }
+   
    #endregion
    
 }

@@ -7,7 +7,11 @@ using UnityEngine.Events;
 
 public class Unit : NetworkBehaviour
 {
+   [Header("Config")]
    [SerializeField] Health health;
+   [SerializeField] int resourceCost = 10;
+   [Header("Refrences")]
+   [SerializeField] UnitFiring unitFiring;
    [SerializeField] UnitMovement unitMovement;
    [SerializeField] Targeter targeter;
    [SerializeField] private UnityEvent onSelected = null;
@@ -20,9 +24,12 @@ public class Unit : NetworkBehaviour
 
    
    public UnitMovement UnitMovement { get => unitMovement; }
+   public UnitFiring UnitFiring { get=> unitFiring; }
    public Targeter Targeter { get => targeter; }
-   
-   
+
+   public int ResourceCost { get => resourceCost; }
+
+
    #region Server
 
    public override void OnStartServer()

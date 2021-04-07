@@ -29,7 +29,9 @@ public class ServerAnimationHandler : NetworkBehaviour
     {
         foreach (Unit unit in allUnits)
         {
-            unit.UnitMovement.CmdUpdateAnimator();
+            unit.UnitMovement.UpdateAnimator();
         }
+        
     }
+    
 }

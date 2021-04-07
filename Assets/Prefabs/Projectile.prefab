@@ -67,8 +67,8 @@ MonoBehaviour:
   syncInterval: 0.1
   rb: {fileID: -8325434736054188827}
   damage: 20
-  launchForce: 16.61
-  lifeTime: 5
+  launchForce: 35
+  lifeTime: 4
 --- !u!54 &-8325434736054188827
 Rigidbody:
   m_ObjectHideFlags: 0
