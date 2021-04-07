@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7314707c-1301-4b2c-b5c3-f8619d0e4ae6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../RandomProjects/multiplayer basics/Assets/Scripts/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitFiring.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitSelectionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buildings/UnitSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitCommandController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../RPG/RPGc/Assets/Scripts/Movement/Mover.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Combat/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Menus/GameOverDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Studies/Unity/Module2UnityProject/HotlineV2/HotlineTiber/Assets/Scripts/Player/PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buildings/UnitBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Networking/RTSPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitProjectile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Buildings/GameOverHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../Studies/Unity/Module2UnityProject/HotlineV2/HotlineTiber/Assets/Scripts/Ai/DebugNavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitMovement.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DebugNavmesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitFiring.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitProjectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Targetable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Combat/HealthDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Networking/RTSPlayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Buildings/UnitSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Networking/ServerAnimationHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Networking/RTSNetworkManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Menus/GameOverDisplay.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Buildings/GameOverHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Buildings/UnitBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitSelectionHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitCommandController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Combat/Targeter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/FaceCamera.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1qdMb5Ng2dWMV7ZMgeGrQeRou34" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../rts builds\RTS Multipllayer.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\ofeka\Desktop\TempProjects\Udemy\Unity Projects\rts builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7314707c-1301-4b2c-b5c3-f8619d0e4ae6" name="Default Changelist" comment="" />
+      <created>1617405084193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617405084193</updated>
+      <workItem from="1617405087903" duration="15357000" />
+      <workItem from="1617510739204" duration="3187000" />
+      <workItem from="1617558763691" duration="2960000" />
+      <workItem from="1617590359426" duration="7298000" />
+      <workItem from="1617657527284" duration="9002000" />
+      <workItem from="1617727396983" duration="69000" />
+      <workItem from="1617770700950" duration="2057000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1114" y="417" key="RiderGenerateDialog" timestamp="1617415684752">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1114" y="417" key="RiderGenerateDialog/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1617415684752" />
+    <state x="782" y="346" key="SettingsEditor" timestamp="1617405911684">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="782" y="346" key="SettingsEditor/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1617405911684" />
+    <state x="937" y="331" key="run.anything.popup" timestamp="1617405476773">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="937" y="331" key="run.anything.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1617405476773" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1617657593345">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1617657593345" />
+  </component>
+</project>
