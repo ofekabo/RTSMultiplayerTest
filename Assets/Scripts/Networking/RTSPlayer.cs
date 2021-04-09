@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 using System;
+using Random = System.Random;
 
 public class RTSPlayer : NetworkBehaviour
 {
@@ -109,7 +110,7 @@ public class RTSPlayer : NetworkBehaviour
     if(!CanPlaceBuilding(buildingCollider,point)) { return; }
     
     GameObject buildingInstance =
-      Instantiate(buildingToPlace.gameObject,point,buildingToPlace.transform.rotation);
+      Instantiate(buildingToPlace.gameObject,point,Quaternion.Euler(buildingToPlace.transform.rotation.x,UnityEngine.Random.Range(180f,245f),buildingToPlace.transform.rotation.z));
     
     NetworkServer.Spawn(buildingInstance,connectionToClient);
     

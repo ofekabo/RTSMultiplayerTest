@@ -394,6 +394,7 @@
             <e p="UnitSpawner.cs" t="Include" />
           </e>
           <e p="Cameras" t="Include">
+            <e p="CameraController.cs" t="Include" />
             <e p="FaceCamera.cs" t="Include" />
           </e>
           <e p="Combat" t="Include">
@@ -403,6 +404,9 @@
             <e p="Targeter.cs" t="Include" />
           </e>
           <e p="DebugNavmesh.cs" t="Include" />
+          <e p="Inputs" t="Include">
+            <e p="Controls.cs" t="Include" />
+          </e>
           <e p="Menus" t="Include">
             <e p="GameOverDisplay.cs" t="Include" />
           </e>

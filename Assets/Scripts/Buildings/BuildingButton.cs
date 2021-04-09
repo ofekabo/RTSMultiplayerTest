@@ -5,8 +5,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Mirror;
+using Unity.Mathematics;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using Random = System.Random;
 
 public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
@@ -18,7 +20,7 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     private Camera _mainCam;
     private RTSPlayer _player;
     private GameObject buildingPreviewInstance;
-    private Renderer buildingRendererInstace;
+    private Renderer[] buildingRendererInstace;
     private BoxCollider buildingCollider;
 
     private void Start()
@@ -50,8 +52,8 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         if(_player.Resources < building.Price) { return; }
         
         buildingPreviewInstance = Instantiate(building.BuildingPreview);
-        buildingRendererInstace = buildingPreviewInstance.GetComponentInChildren<Renderer>();
-        Debug.Log(buildingRendererInstace.name);
+        buildingPreviewInstance.transform.rotation = Quaternion.Euler(0,UnityEngine.Random.Range(180f,245f),0);
+        buildingRendererInstace = buildingPreviewInstance.GetComponentsInChildren<Renderer>();
         buildingPreviewInstance.SetActive(false);
     }
 
@@ -75,11 +77,15 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         if (!Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, floorMask)) { return; }
         buildingPreviewInstance.transform.position = hit.point;
         
+        
         if(!buildingPreviewInstance.activeSelf)
             buildingPreviewInstance.SetActive(true);
         
         Color color = _player.CanPlaceBuilding(buildingCollider,hit.point) ? Color.green : Color.red;
-        
-        buildingRendererInstace.material.color = color;
+
+        foreach (var renderer in buildingRendererInstace)
+        {
+            renderer.material.color = color;
+        }
     }
 }
