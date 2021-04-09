@@ -411,6 +411,7 @@
             <e p="RTSNetworkManager.cs" t="Include" />
             <e p="RTSPlayer.cs" t="Include" />
             <e p="ServerAnimationHandler.cs" t="Include" />
+            <e p="TeamColorSetter.cs" t="Include" />
           </e>
           <e p="Resources" t="Include">
             <e p="ResourcesDisplay.cs" t="Include" />

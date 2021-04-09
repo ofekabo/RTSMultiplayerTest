@@ -6,29 +6,52 @@ using System;
 
 public class RTSPlayer : NetworkBehaviour
 {
+  [SerializeField] private LayerMask buildingBlockLayer = new LayerMask();
   [SerializeField] private Building[] buildings = new Building[0];
+  [SerializeField] private float minBuildingRangeLimit = 2f;
+  [SerializeField] private float buildingRangeLimit = 7f;
   
   [SyncVar(hook = nameof(ClientHandleResourcesUpdated))]
   private int resources = 500;
   
   public event Action<int> ClientOnResourcesUpdated;
   
+  
   private List<Unit> myUnits = new List<Unit>();
   private List<Building> myBuildings = new List<Building>();
+  private Color _teamColor = new Color();
 
   public List<Unit> MyUnits { get => myUnits; }
   public List<Building> MyBuildings { get => myBuildings; }
   public int Resources { get => resources; }
+  public Color TeamColor { get => _teamColor; }
+  
 
-  [Server]
-  public void SetResources(int newResources)
+  public bool CanPlaceBuilding(BoxCollider buildingCollider, Vector3 point)
   {
-    resources = newResources;
+    if (Physics.CheckBox(point + buildingCollider.center, buildingCollider.size / 2,
+      Quaternion.identity, buildingBlockLayer))
+    {
+      return false;
+    }
+    
+    // checking if desired location to build is between two points
+    foreach (var building in myBuildings)
+    {
+      if ((point - building.transform.position).sqrMagnitude 
+          <= buildingRangeLimit * buildingRangeLimit 
+          &&
+          (point - building.transform.position).sqrMagnitude
+            >= minBuildingRangeLimit * minBuildingRangeLimit)
+      {
+        return  true;
+      }
+    }
+    return false;
   }
   
   #region Server
-
-
+  
   public override void OnStartServer()
   {
     Unit.ServerOnUnitSpawned += ServerHandleUnitSpawned;
@@ -38,7 +61,29 @@ public class RTSPlayer : NetworkBehaviour
     Building.ServerOnBuildingDespawned += ServerHandleBuildingDespawned;
 
   }
+  
+  public override void OnStopServer()
+  {
+    Unit.ServerOnUnitSpawned -= ServerHandleUnitSpawned;
+    Unit.ServerOnUnitDespawned -= ServerHandleUnitDespawned;
+    
+    Building.ServerOnBuildingSpawned -= ServerHandleBuildingSpawned;
+    Building.ServerOnBuildingDespawned -= ServerHandleBuildingDespawned;
+  }
+  
+  [Server]
+  public void SetTeamColor(Color newTeamColor)
+  {
+    _teamColor = newTeamColor;
+  }
 
+    
+  [Server]
+  public void SetResources(int newResources)
+  {
+    resources = newResources;
+  }
+  
   [Command]
   public void CmdTryPlaceBuilding(int buildingID,Vector3 point)
   {
@@ -55,21 +100,21 @@ public class RTSPlayer : NetworkBehaviour
     
     if(buildingToPlace == null) { return; }
     
+    if(resources < buildingToPlace.Price) { return; }
+    
+    BoxCollider buildingCollider = buildingToPlace.GetComponent<BoxCollider>();
+    
+    
+    
+    if(!CanPlaceBuilding(buildingCollider,point)) { return; }
+    
     GameObject buildingInstance =
       Instantiate(buildingToPlace.gameObject,point,buildingToPlace.transform.rotation);
     
     NetworkServer.Spawn(buildingInstance,connectionToClient);
     
-  }
-  
-
-  public override void OnStopServer()
-  {
-    Unit.ServerOnUnitSpawned -= ServerHandleUnitSpawned;
-    Unit.ServerOnUnitDespawned -= ServerHandleUnitDespawned;
+    SetResources(resources - buildingToPlace.Price);
     
-    Building.ServerOnBuildingSpawned -= ServerHandleBuildingSpawned;
-    Building.ServerOnBuildingDespawned -= ServerHandleBuildingDespawned;
   }
 
   private void ServerHandleUnitSpawned(Unit unit)

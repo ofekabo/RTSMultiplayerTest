@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 4263546976560754687}
   - component: {fileID: -46652922439199694}
   - component: {fileID: 7189985327833318872}
+  - component: {fileID: 6670963923131566596}
   m_Layer: 10
   m_Name: UnitCowboy
   m_TagString: Untagged
@@ -688,6 +689,22 @@ MonoBehaviour:
   health: {fileID: -46652922439199694}
   healthBarParent: {fileID: 2998445865337342737}
   healthBarImage: {fileID: 2998445865197623296}
+--- !u!114 &6670963923131566596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565581384645381206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f4f0b245214b34e8329c5744ee3751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  colorRenderers:
+  - {fileID: 448311673191704348}
 --- !u!1 &565587407078263046
 GameObject:
   m_ObjectHideFlags: 0

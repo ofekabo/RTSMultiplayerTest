@@ -2673,6 +2673,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: NetworkManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 66a8a6e30880caa48908020cf5388217, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a15da839caab97b4f9cd9586f4ff31e6, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: e611177a3c87f9746befe4d104a33201, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5146a78f90d41354b9e048f81986a8f3, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[4]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e3d175f3d5b8914cb1c010383991d6d, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[5]
+      value: 
+      objectReference: {fileID: 2100000, guid: 67cb02df386c44e4b9da736f1a3688f9, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[6]
+      value: 
+      objectReference: {fileID: 2100000, guid: 389b1eed39cf63c4fb8efea61e9976c5, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0363b46d437346a419e1ca86ea14de9e, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd9a2415c6257cb4ba1738d92c094497, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[9]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3b20901891546e04999f06509086c9bf, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[10]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e05935a90b6d7849a0fff4320edec77, type: 2}
+    - target: {fileID: 5498110948365671460, guid: 8a239af2647746946a82b069b09950b6, type: 3}
+      propertyPath: teamColors.Array.data[11]
+      value: 
+      objectReference: {fileID: 2100000, guid: e8a12213ace71464e991b09e2e492540, type: 2}
     - target: {fileID: 5498110948365671463, guid: 8a239af2647746946a82b069b09950b6, type: 3}
       propertyPath: m_RootOrder
       value: 1
